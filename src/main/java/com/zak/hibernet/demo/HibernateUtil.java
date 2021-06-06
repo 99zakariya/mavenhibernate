@@ -22,8 +22,8 @@ public class HibernateUtil
             Configuration cfg = new Configuration();
             cfg.configure("hibernate.cfg.xml");
             cfg.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/mydb");
-            cfg.setProperty("hibernate.connection.username", "root");
-            cfg.setProperty("hibernate.connection.password", "system");
+            cfg.setProperty("hibernate.connection.username", "petclinic");
+            cfg.setProperty("hibernate.connection.password", "petclinic");
 //            cfg.setProperty("hibernate.connection.username", "system");
 //            cfg.setProperty("hibernate.connection.password", "system");
             cfg.addAnnotatedClass(Item.class);
