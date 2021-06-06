@@ -8,12 +8,12 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - 3000:3000
- mysql:
-        image: mysql:5.7
-        ports:
-          - "3306:3306"
-        environment:
-          - MYSQL_ROOT_PASSWORD=petclinic
-          - MYSQL_DATABASE=petclinic
-        volumes:
+   mysql:
+      image: mysql:5.7
+      ports:
+       - "3306:3306"
+      environment:
+        - MYSQL_ROOT_PASSWORD=petclinic
+        - MYSQL_DATABASE=petclinic
+      volumes:
           - "./conf.d:/etc/mysql/conf.d:ro"
