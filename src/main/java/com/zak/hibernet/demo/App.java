@@ -11,13 +11,15 @@ public class App
         HibernateUtil h= new HibernateUtil();
         SessionFactory sf=h.getSessionFactory();
         
-        Item i=new Item();
-        i.setName("vscode");
-        i.setId(2);
+     //   Item i=new Item();
+      //  i.setName("vscode");
+       // i.setId(2);
         
         Session s=sf.openSession();
         s.beginTransaction();
-        s.save(i);
+       // s.save(i);
+       Item i = (Item)s.get(Item.class,2);
+       System.out.println(i);
         s.getTransaction().commit();
         System.out.println("bye");
     }

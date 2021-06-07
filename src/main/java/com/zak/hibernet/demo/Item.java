@@ -26,5 +26,7 @@ public class Item {
 		this.name = name;
 	}
 	
-	
+	public String toString(){
+		return "Item [id=" + id + ", name=" + name + "]";
+	}
 }
