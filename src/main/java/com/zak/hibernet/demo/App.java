@@ -33,6 +33,7 @@ public class App
         s.beginTransaction();
         s.save(i);
         s.getTransaction().commit();
+        System.out.println("item added to database");
     }
     public void print()
     {
