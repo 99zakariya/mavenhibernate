@@ -27,6 +27,7 @@ public class HibernateUtil
 //            cfg.setProperty("hibernate.connection.username", "system");
 //            cfg.setProperty("hibernate.connection.password", "system");
             cfg.addAnnotatedClass(Item.class);
+            cfg.addAnnotatedClass(Pet.class);
             sessionFactory=cfg.buildSessionFactory();
         }
         catch (Throwable ex) 

@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(schema = "mydb",name = "item")
 public class Item {
 	@Id
-	
+	@GeneratedValue
 	private int id;
 	private String name;
 	
